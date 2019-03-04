@@ -1,4 +1,7 @@
-string = "ass.ysdv hsdif kashgf    vacshvfne cfjctydhf ashfacd cfvcds"
+"""
+Practice_2, this exercise will count frequency of characters present in the string
+"""
+string = "assads.ysdv hsdif kashgf    vacshvfne cfjctydhf ashfacd cfvcds"
 dictionary = {}
 length = len(string)
 

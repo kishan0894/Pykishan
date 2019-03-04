@@ -19,4 +19,13 @@ keys = dict_of_list.keys()
 for key in keys:
     globals()['{}'.format(key)] = dict_of_list[key] #creating lists in run time and adding key value to it from dict_of_lists
 
-print(Name) #you can dynamically use any column name as per your requirement
+
+print("Enter Filed name")
+
+xx= input()
+if(xx in keys ):
+
+    print()
+else:
+    print("Wrong Filed name")
+#you can dynamically use any column name as per your requirement
