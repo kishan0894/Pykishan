@@ -78,3 +78,30 @@ Exiting due to channel error.
 1552478617566	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:179: ... t@chrome://marionette/content/server.js:236:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:492:20\n"},null]
 Exiting due to channel error.
 Exiting due to channel error.
+1552540182710	geckodriver	INFO	geckodriver 0.19.1
+1552540182715	geckodriver	INFO	Listening on 127.0.0.1:50637
+1552540183849	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yqq43X8h5ba3"
+1552540184190	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184190	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184190	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184202	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184204	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184204	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184210	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540184210	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540184210	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540184624	Marionette	INFO	Enabled via --marionette
+1552540184682	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184682	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184682	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540184682	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184682	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184682	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540184684	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540184684	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540184684	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540185194	addons.xpi	WARN	Add-on langpack-en-GB@firefox.mozilla.org is not compatible with application version.
+1552540185194	addons.xpi	WARN	Add-on langpack-en-ZA@firefox.mozilla.org is not compatible with application version.
+1552540185196	addons.xpi	WARN	Add-on langpack-en-CA@firefox.mozilla.org is not compatible with application version.
+1552540187014	Marionette	INFO	Listening on port 35553
+1552540187072	Marionette	WARN	TLS certificate errors will be ignored for this session
