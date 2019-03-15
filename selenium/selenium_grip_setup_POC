@@ -1,0 +1,68 @@
+Steps to setup and configure selenium grid- Hub and nodes.
+
+
+To setup HUB 
+
+  A.  Make a directory with mkdir ~/selenium
+  cd ~/selenium
+  wget http://goo.gl/rQhaxb
+  mv selenium-server-standalone-2.49.1.jar ~/selenium/
+
+  B. Download dependencies-
+	Download and install selenium WebDriver bindings for Python
+    I. Wget https://pypi.python.org/packages/source/s/selenium/selenium-2.49.2.tar.gz#md5=17cfe7c6adb2cad1f64a61cf753f0738
+    II  tar -zxvf selenium-2.49.2.tar.gz
+    III cd selenium-2.49.2
+    IV python2.7 setup.py install --user
+	
+	C. Create your Test case file. 
+    https://github.com/kishan0894/Pykishan/blob/master/Automation_Script_selenium
+	
+	D. Dependencies - 
+		I. sudo apt-get install software-properties-common
+		II. sudo apt-get install oracle-java8-installer
+	
+	E. Initiate the HUB.  
+    java -jar selenium-server-standalone-3.10.0.jar -role hub
+
+	F. Now we have to configure our Node to the hub. 
+		Here is an example of node configuration for Chrome and Firefox nodes.
+		  1.  Firefox - https://github.com/kishan0894/Pykishan/blob/master/selenium/configuration_firefox.json
+		  2. Chrome- https://github.com/kishan0894/Pykishan/blob/master/selenium/configuration_chrome.json
+	
+  G. The step which connects node and hub to communicate after the hub is initialized -
+      java -jar selenium-server-standalone-3.10.0.jar -role node --configuration_firefox.json/ --configuration_chrome.json
+
+
+
+
+
+
+
+H. Executing the Automation_script_selenium.py will redirect request to node which is on hub. 
+		Deploying grid architecture on Docker Container. 
+
+Setup on Docker Container
+
+
+Install Docker.
+Sudo apt-get install docker.io 
+Find appropriate docker image for HUB and grids 	
+Image
+Command
+Selenium Hub
+Docker pull selenium/hub
+Selenium firefox node
+docker pull selenium/node-firefox
+Selenium chrome node
+docker pull selenium/node-chrome
+Selenium firefox debug
+docker pull selenium/node-firefox-debug
+Selenium chrome debug
+docker pull selenium/node-chrome-debug
+
+docker run -d -P --link selenium-hub:hub selenium/selenium/node-chrome
+docker run -d -P --link selenium-hub:hub selenium/selenium/node-firefox
+Mention port id in executable command in Automation_script_selenium.
+Ready environment you have 
+Enjoy you testing.
