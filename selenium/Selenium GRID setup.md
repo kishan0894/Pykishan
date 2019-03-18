@@ -24,6 +24,7 @@ Make a directory with `mkdir ~/selenium`
 **Dependencies**
 
 `sudo apt-get install software-properties-common`
+
 `sudo apt-get install oracle-java8-installer`
 	
 **Initiate the HUB**
